@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cards Flip</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body onload="handleStartLoad()">
+  <div class="main">
+
+    <!-- Header start -->
+    <header>
+      <h1>Cards Flip</h1>
+      <button id="reset-button" class="reset-button" onclick="handleRestartClicked()">
+        Restart
+      </button>
+    </header>
+    <!-- Header end -->
+    <!-- Cards list Section starts -->
+    <div class="cards">
+      <!-- Card 1 start -->
+
+      <div class="card" id="heart-1-card" onclick="handleCardClicked('heart-1')">
+
+        <div class="card-front" id="heart-1-card-front">
+          <img src="assets/heart_eyes.png" alt="" id="heart-1" />
+        </div>
+        <div class="card-back" id="heart-1-card-back">
+          <img src="assets/face_with_cowboy_hat.png" />
+        </div>
+      </div>
+      <!-- Card 1 end -->
+
+      <!-- Card 2 start -->
+      <div class="card" id="heart-2-card" onclick="handleCardClicked('heart-2')">
+        <div class="card-front" id="heart-2-card-front">
+          <img src="assets/heart_eyes.png" alt="" id="heart-2" />
+        </div>
+        <div class="card-back" id="heart-2-card-back">
+          <img src="assets/face_with_cowboy_hat.png" />
+        </div>
+      </div>
+      <!-- Card 2 end -->
+
+      <!-- Card 3 start -->
+      <div class="card" id="cold-1-card" onclick="handleCardClicked('cold-1')">
+        <div class="card-front" id="cold-1-card-front">
+          <img src="assets/cold_face.png" alt="" id="cold-1" />
+        </div>
+        <div class="card-back" id="cold-1-card-back">
+          <img src="assets/face_with_cowboy_hat.png" />
+        </div>
+      </div>
+      <!-- Card 3 end -->
+
+      <!-- Card 4 start-->
+      <div class="card" id="cold-2-card" onclick="handleCardClicked('cold-2')">
+        <div class="card-front" id="cold-2-card-front">
+          <img src="assets/cold_face.png" alt="" id="cold-2" />
+        </div>
+        <div class="card-back" id="cold-2-card-back">
+          <img src="assets/face_with_cowboy_hat.png" />
+        </div>
+      </div>
+      <!-- Card 4 end -->
+
+      <!-- Card 5 start -->
+      <div class="card" id="kissing-1-card" onclick="handleCardClicked('kissing-1')">
+        <div class="card-front" id="kissing-1-card-front">
+          <img src="assets/kissing_heart.png" alt="" id="kissing-1" />
+        </div>
+        <div class="card-back" id="kissing-1-card-back">
+          <img src="assets/face_with_cowboy_hat.png" />
+        </div>
+      </div>
+      <!-- Card 5 end -->
+
+      <!-- Card 6 start -->
+      <div class="card" id="kissing-2-card" onclick="handleCardClicked('kissing-2')">
+        <div class="card-front" id="kissing-2-card-front">
+          <img src="assets/kissing_heart.png" alt="" id="kissing-2" />
+        </div>
+        <div class="card-back" id="kissing-2-card-back">
+          <img src="assets/face_with_cowboy_hat.png" />
+        </div>
+      </div>
+      <!-- Card 6 end -->
+
+      <!-- Card 7 start -->
+      <div class="card" id="hot-1-card" onclick="handleCardClicked('hot-1')">
+        <div class="card-front" id="hot-1-card-front">
+          <img src="assets/hot_face.png" alt="" id="hot-1" />
+        </div>
+        <div class="card-back" id="hot-1-card-back">
+          <img src="assets/face_with_cowboy_hat.png" />
+        </div>
+      </div>
+      <!-- Card 7 end -->
+
+      <!-- Card 8 start -->
+      <div class="card" id="hot-2-card" onclick="handleCardClicked('hot-2')">
+        <div class="card-front" id="hot-2-card-front">
+          <img src="assets/hot_face.png" alt="" id="hot-2" />
+        </div>
+        <div class="card-back" id="hot-2-card-back">
+          <img src="assets/face_with_cowboy_hat.png" />
+        </div>
+      </div>
+      <!-- Card 8 end -->
+
+      <!-- Card 9 start -->
+      <div class="card" id="money-1-card" onclick="handleCardClicked('money-1')">
+        <div class="card-front" id="money-1-card-front">
+          <img src="assets/money_mouth_face.png" alt="" id="money-1" />
+        </div>
+        <div class="card-back" id="money-1-card-back">
+          <img src="assets/face_with_cowboy_hat.png" />
+        </div>
+      </div>
+      <!-- Card 9 end -->
+
+      <!-- Card 10 start -->
+      <div class="card" id="money-2-card" onclick="handleCardClicked('money-2')">
+        <div class="card-front" id="money-2-card-front">
+          <img src="assets/money_mouth_face.png" alt="" id="money-2" />
+        </div>
+        <div class="card-back" id="money-2-card-back">
+          <img src="assets/face_with_cowboy_hat.png" />
+        </div>
+      </div>
+      <!-- Card 10 end -->
+
+      <!-- Card 11 start -->
+      <div class="card" id="party-1-card" onclick="handleCardClicked('party-1')">
+        <div class="card-front" id="party-1-card-front">
+          <img src="assets/partying_face.png" alt="" id="party-1" />
+        </div>
+        <div class="card-back" id="party-1-card-back">
+          <img src="assets/face_with_cowboy_hat.png" />
+        </div>
+      </div>
+      <!-- Card 11 end -->
+
+      <!-- Card 12 start -->
+      <div class="card" id="party-2-card" onclick="handleCardClicked('party-2')">
+        <div class="card-front" id="party-2-card-front">
+          <img src="assets/partying_face.png" alt="" id="party-2" />
+        </div>
+        <div class="card-back" id="party-2-card-back">
+          <img src="assets/face_with_cowboy_hat.png" />
+        </div>
+      </div>
+      <!-- Card 12 end -->
+
+      <!-- Card 13 start -->
+      <div class="card" id="laugh-1-card" onclick="handleCardClicked('laugh-1')">
+        <div class="card-front" id="laugh-1-card-front">
+          <img src="assets/laugh.png" alt="" id="laugh-1" />
+        </div>
+        <div class="card-back" id="laugh-1-card-back">
+          <img src="assets/face_with_cowboy_hat.png" />
+        </div>
+      </div>
+      <!-- Card 13 end -->
+
+      <!-- Card 14 start -->
+      <div class="card" id="laugh-2-card" onclick="handleCardClicked('laugh-2')">
+        <div class="card-front" id="laugh-2-card-front">
+          <img src="assets/laugh.png" alt="" id="laugh-2" />
+        </div>
+        <div class="card-back" id="laugh-2-card-back">
+          <img src="assets/face_with_cowboy_hat.png" />
+        </div>
+      </div>
+      <!-- Card 14 end -->
+
+      <!-- Card 15 start -->
+      <div class="card" id="nerd-1-card" onclick="handleCardClicked('nerd-1')">
+        <div class="card-front" id="nerd-1-card-front">
+          <img src="assets/nerd_face.png" alt="" id="nerd-1" />
+        </div>
+        <div class="card-back" id="nerd-1-card-back">
+          <img src="assets/face_with_cowboy_hat.png" />
+        </div>
+      </div>
+      <!-- Card 15 end -->
+
+      <!-- Card 16 start -->
+      <div class="card" id="nerd-2-card" onclick="handleCardClicked('nerd-2')">
+        <div class="card-front" id="nerd-2-card-front">
+          <img src="assets/nerd_face.png" alt="" id="nerd-2" />
+        </div>
+        <div class="card-back" id="nerd-2-card-back">
+          <img src="assets/face_with_cowboy_hat.png" />
+        </div>
+      </div>
+
+      <!-- Card 16 end-->
+      <div class="overlay" id="result"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
