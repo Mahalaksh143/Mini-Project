@@ -12,7 +12,7 @@ A simple interactive card flipping game built for learning and entertainment pur
 
 1. Clone the repository:
    ```bash
-   git clone .git
+   git clone https://github.com/Mahalaksh143/Mini-Project.git
    ```
 2. Open the project folder.
 3. Run the game using your preferred method (e.g., open `index.html` in your browser).
@@ -24,7 +24,7 @@ A simple interactive card flipping game built for learning and entertainment pur
 ## Usage
 
 - Click the card to reveal the image.
-- Try to find pair of cards by clicking in sequence [like 1st click will reveal one image and second click should reveal same image otherwise last two revealed cards will flip back.].
+- Try to find pair of cards by clicking in sequence [like 1st click will reveal one image and second click should reveal same image otherwise last two revealed cards will flip back.
 
 ## Author
 
